@@ -91,6 +91,54 @@ li {
     color: var(--tertiary);
 }
 
+
+/* add btn */
+.addbtn {
+    width: 75%;
+    height: 50px;
+    background-color: var(--secondary);
+    box-shadow: 5px 5px 20px black;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.addbtn:hover{
+    background-color:transparent;
+    border: var(--secondary);
+    color: black;
+}
+
+.addbtn1{
+    width: 20%;
+    height: 40px;
+    background-color: var(--secondary);
+    box-shadow: 3px 3px 10px black;
+    padding: 7px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.close:hover{
+    background-color:red;
+    border: var(--secondary);
+    color: black;
+}
+
+.save:hover{
+    background-color:rgb(0, 255, 238);
+    border: var(--secondary);
+    color: black;
+}
+
+.addblogbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 /* Global Tag Section */
 .tag_section{
     width: 100%;
@@ -168,10 +216,10 @@ li {
     -webkit-backdrop-filter:blur(10.5px) ;
     padding: 10px 100px;
     border-bottom: 1px solid rgba(65, 65, 65, 0.7);
-    position: fixed;
+    /* position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 9999; */
 }
 
 /* logo  */
