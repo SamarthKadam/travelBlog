@@ -30,7 +30,7 @@
 
 <body>
     <!-- Modal -->
-    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade " id="addblogmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -38,6 +38,10 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="url" class="form-label">Image Url</label>
+                        <input type="url" class="form-control" id="imageurl" placeholder="http://example.com/image.jpg ">
+                    </div>
                     <div class="mb-3">
                         <label for="date" class="form-label">Date</label>
                         <input type="date" class="form-control" id="date" placeholder="Enter Visited date">
@@ -81,7 +85,7 @@
                     <li><a href="#" class="nav_link">Contact</a></li>
                 </ul>
 
-                <div id="toggleIcon">
+                <div id="toggleIcon" >
                     <i class="fa-solid fa-bars-staggered"></i>
                 </div>
             </div>
@@ -369,9 +373,9 @@
             </div>
 
         </div>
-        <!-- Button trigger modal -->
+        <!-- Add Button trigger modal -->
         <div class="addblogbtn">
-            <button type="button" class="btn btn-primary addbtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-primary addbtn" data-bs-toggle="modal" data-bs-target="#addblogmodal">
                 Add your Blog's
             </button>
         </div>
