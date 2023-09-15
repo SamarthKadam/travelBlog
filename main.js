@@ -5,16 +5,35 @@
 // });
 
 
-const blogBox = document.querySelector(".blog_section_box");
+const blogBox = document.querySelector(".blog_container");
 console.log(blogBox);
 
 const save = () => {
     const blogData = {
         id: `${Date.now()}`,
         imageUrl: document.getElementById("imageurl").value,
-        date: document.getElementById("date").value,
-        placeName: document.getElementById("placename").value,
-        discription: document.getElementById("description").value
+        Blogate: document.getElementById("date").value,
+        blogTitle: document.getElementById("placename").value,
+        blogDiscription: document.getElementById("description").value
     };
-    console.log(blogData);
+    const newBlog =`
+    <div class="blog_box">
+                    <img src=${blogData.imageUrl} alt="Blog Image" class="blog_img" id=${blogData.id}>
+                    <div class="blog_data">
+                        <p class="date">
+                            <i class="fa-solid fa-calender-days"></i> &nbsp; ${blogData.Blogate}
+                        </p>
+                        <h6 class="blog_title">${blogData.blogTitle}</h6>
+                        <div class="blog_desc">
+                            ${blogData.blogDiscription}
+                        </div>
+                        <button class="read_btn">
+                            Read More <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+    `;
+
+    blogBox.insertAdjacentHTML("beforeend", newBlog);
+    console.log(newBlog)
 };
