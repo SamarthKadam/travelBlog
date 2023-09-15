@@ -1,8 +1,8 @@
-// $(document).ready(function () {
-//     $("#toggleIcon").click(function() {
-//         $("ul").toggleClass("show")
-//     });
-// });
+$(document).ready(function () {
+    $("#toggleIcon").click(function() {
+        $("ul").toggleClass("show")
+    });
+});
 
 
 const blogBox = document.querySelector(".blog_container");
