@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({
 
 // connect database
 
-mongoose.connect("mongodb://0.0.0.0:27017/mydb", {
+mongoose.connect("mongodb://localhost:27017/mydb", {
     useNewUrlParser:true,
     useUnifiedTopology:true
 })
