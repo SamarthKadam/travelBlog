@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Kaushan+Script&display=swap');
+
+
+* {
+    padding: 0;
+    margin: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.container{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.submit {
+    border: 5px solid aqua;
+    width: 50%;
+    height: 400px;
+    margin: auto;
+    padding: 20px;
+
+
+}
+
+h1{
+    font-family: 'Archivo Black', sans-serif;
+    margin-top: 75px;
+    font-size: 48px;
+}
+
+h2{
+    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 45px;
+}
