@@ -397,35 +397,35 @@
                                 href="https://www.maps.ie/population/">Calculate population in area</a></iframe></div>
                 </div>
                 <div class="form_section" data-aos="flip-left" data-aos-easing="ease-in-cubic" data-aos-duration="2000">
-<!-- Use Formspree software to submit the contact us form Email or information can transfer to registes email -->
+<!-- Use Formspree software to submit the contact us form Email or information can transfer to registes email     https://formspree.io/f/moqollyn -->
 
-                    <form action="https://formspree.io/f/moqollyn" method="POST">
+                    <form action="/contact" method="post">
                         <div class="input_group">
                             <div class="input_box">
-                                <label for="firstname" class="label">Firstname</label>
-                                <input type="text" class="input" placeholder="Enter your FirstName">
+                                <label for="firstname" class="label" name="firstname">Firstname</label>
+                                <input type="text" id="firstname" class="input" placeholder="Enter your FirstName" name="firstname">
                             </div>
                             <div class="input_box">
-                                <label for="lastname" class="label">Lastname</label>
-                                <input type="text" class="input" placeholder="Enter your LastName">
+                                <label for="lastname" class="label" name="lastname">Lastname</label>
+                                <input type="text" id="lastname" class="input" name="lastname" placeholder="Enter your LastName">
                             </div>
                         </div>
                         <div class="input_group">
                             <div class="input_box">
-                                <label for="email" class="label">Email</label>
-                                <input type="email" class="input" placeholder="Enter your Email">
+                                <label for="email" class="label" name="email">Email</label>
+                                <input type="email" id="email" class="input" name="email" placeholder="Enter your Email">
                             </div>
                             <div class="input_box">
-                                <label for="subject" class="label">Subject</label>
-                                <input type="text" class="input" placeholder="Write Something..!">
+                                <label for="subject" class="label" name="subject">Subject</label>
+                                <input type="text" id="subject" class="input" name="subject" placeholder="Write Something..!">
                             </div>
                         </div>
                         <div class="message_box">
-                            <label for="place_desc" class="label">Place Description</label>
-                            <textarea name="place_desc" id="place_desc" cols="30" rows="6"
+                            <label for="place_desc" class="label" name="place_desc">Place Description</label>
+                            <textarea name="place_desc" id="place_desc" cols="30" rows="6" name="description"
                                 placeholder="Please clearly provide place description...!"></textarea>
                         </div>
-                        <button class="btn bg_btn submit_btn" type="submit">Submit</button>
+                        <button class="btn bg_btn submit_btn" id="submit" type="submit" value="Submit">Submit</button>
                     </form>
                 </div>
             </div>
